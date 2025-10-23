@@ -547,8 +547,6 @@ function clip()
 	Clip = true
 end
 
-noclip() -- to toggle noclip() and clip()
-
 local Slider = Tab5:CreateSlider({
    Name = "Gravity",
    Range = {1, 500},
