@@ -50,7 +50,7 @@ local Tab2 = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
 local Tab6 = Window:CreateTab("Fake Ranks", 4483362458) -- Title, Image
 
-
+clip()
 
 
 local Button = Tab:CreateButton({
