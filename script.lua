@@ -1,3 +1,16 @@
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
+
+-- This data was received from the server
+firesignal(EssentialsEvent.OnClientEvent, 
+    "Message",
+    "VixenGUI Washiez",
+    "Successfully loaded VixenGUI! Have fun!"
+)
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
@@ -8,19 +21,7 @@ local RemoteArgs = {
     [5] = ""
 } -- Arguments aren't ordered
 
--- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
--- Services
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
--- Remote
-local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
-
--- This data was received from the server
-firesignal(EssentialsEvent.OnClientEvent, 
-    "Message",
-    "VixenGUI | Washiez",
-    "Successfully loaded VixenGUI! Have fun!"
-)
 
 -- This data was received from the server
 firesignal(EssentialsEvent.OnClientEvent, unpack(RemoteArgs, 1, table.maxn(RemoteArgs)))
@@ -73,9 +74,11 @@ local Tab = Window:CreateTab("Teleports", 2129457772) -- Title, Image
 
 local Tab3 = Window:CreateTab("Chats", 77955658249798) -- Title, Image
 
+local Tab6 = Window:CreateTab("Ranks", 7992557358) -- Title, Image
+
 local Tab2 = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
-local Tab6 = Window:CreateTab("Ranks", 4483362458) -- Title, Image
+
 
 
 
