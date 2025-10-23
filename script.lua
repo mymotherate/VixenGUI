@@ -1,3 +1,16 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
+local RemoteArgs = {
+    "PM",
+    "Deviizer",
+    "Enjoy the GUI!",
+    [5] = ""
+} -- Arguments aren't ordered
+
+-- This data was received from the server
+firesignal(EssentialsEvent.OnClientEvent, unpack(RemoteArgs, 1, table.maxn(RemoteArgs)))
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
