@@ -1,30 +1,31 @@
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
+if game.PlaceId ~= 6884042552 then
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
--- Remote
-local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
+    -- Remote
+    local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
+
+    -- This data was received from the server
+    firesignal(EssentialsEvent.OnClientEvent, 
+        "Message",
+        "VixenGUI Washiez",
+        "Successfully loaded VixenGUI! Have fun!"
+    )
+
+    local RemoteArgs = {
+        "PM",
+        "TheMajikMan",
+        "We genuinely hope that you enjoy VixenGUI! Have fun!",
+        [5] = ""
+    } -- Arguments aren't ordered
+    firesignal(EssentialsEvent.OnClientEvent, unpack(RemoteArgs, 1, table.maxn(RemoteArgs)))
+end
+
+
+
 
 -- This data was received from the server
-firesignal(EssentialsEvent.OnClientEvent, 
-    "Message",
-    "VixenGUI Washiez",
-    "Successfully loaded VixenGUI! Have fun!"
-)
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
-local RemoteArgs = {
-    "PM",
-    "TheMajikMan",
-    "We genuinely hope that you enjoy VixenGUI! Have fun!",
-    [5] = ""
-} -- Arguments aren't ordered
-
-
-
--- This data was received from the server
-firesignal(EssentialsEvent.OnClientEvent, unpack(RemoteArgs, 1, table.maxn(RemoteArgs)))
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
