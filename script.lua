@@ -48,7 +48,7 @@ local Tab3 = Window:CreateTab("Chats", 77955658249798) -- Title, Image
 
 local Tab2 = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
-local Tab6 = Window:CreateTab("Misc", 4483362458) -- Title, Image
+local Tab6 = Window:CreateTab("Fake Ranks", 4483362458) -- Title, Image
 
 
 
@@ -583,8 +583,8 @@ local rank = nameTag:FindFirstChild("Username")
 local hint = nameTag:FindFirstChild("Message")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(255, 170, 0)
-	hint.TextColor3 = Color3.new(255, 170, 0)
+	rank.TextColor3 = Color3.fromRGB(227, 176, 7) 
+	hint.TextColor3 = Color3.fromRGB(227, 176, 7)
 	hint.Text = "⭐ VIP ⭐"
 end
    end,
@@ -604,7 +604,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(234, 97, 56) 
+	rank.TextColor3 = Color3.fromRGB(234, 97, 56) 
 	rank.Text = "Chairman"
 end
    end,
@@ -625,7 +625,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(221, 106, 68) 
+	rank.TextColor3 = Color3.fromRGB(221, 106, 68) 
 	rank.Text = "Vice Chairman"
 end
    end,
@@ -648,7 +648,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(214, 103, 151) 
+	rank.TextColor3 = Color3.fromRGB(214, 103, 151) 
 	rank.Text = "Chief Administrative Officer"
 end
    end,
@@ -669,7 +669,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(165, 54, 235) 
+	rank.TextColor3 = Color3.fromRGB(165, 54, 235) 
 	rank.Text = "Chief Operating Officer"
 end
    end,
@@ -690,7 +690,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(165, 54, 235) 
+	rank.TextColor3 = Color3.fromRGB(165, 54, 235) 
 	rank.Text = "Chief Public Relations Officer"
 end
    end,
@@ -711,7 +711,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(165, 54, 235) 
+	rank.TextColor3 = Color3.fromRGB(165, 54, 235) 
 	rank.Text = "Chief Human Resources Officer"
 end
    end,
@@ -732,7 +732,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(52, 192, 227) 
+	rank.TextColor3 = Color3.fromRGB(52, 192, 227) 
 	rank.Text = "Head Corporate"
 end
    end,
@@ -752,7 +752,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(52, 192, 227) 
+	rank.TextColor3 = Color3.fromRGB(52, 192, 227) 
 	rank.Text = "Senior Corporate"
 end
    end,
@@ -772,7 +772,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(52, 192, 227) 
+	rank.TextColor3 = Color3.fromRGB(52, 192, 227) 
 	rank.Text = "Junior Corporate"
 end
    end,
@@ -792,7 +792,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(52, 192, 227) 
+	rank.TextColor3 = Color3.fromRGB(52, 192, 227) 
 	rank.Text = "Corporate Interm"
 end
    end,
@@ -812,7 +812,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(243, 0, 117) 
+	rank.TextColor3 = Color3.fromRGB(243, 0, 117) 
 	rank.Text = "Head Director"
 end
    end,
@@ -832,7 +832,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(243, 0, 117) 
+	rank.TextColor3 = Color3.fromRGB(243, 0, 117) 
 	rank.Text = "Senior Director"
 end
    end,
@@ -852,7 +852,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(243, 0, 117) 
+	rank.TextColor3 = Color3.fromRGB(243, 0, 117) 
 	rank.Text = "Junior Director"
 end
    end,
@@ -875,7 +875,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(227, 176, 7) 
+	rank.TextColor3 = Color3.fromRGB(227, 176, 7) 
 	rank.Text = "General Manager"
 end
    end,
@@ -895,7 +895,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(227, 176, 7) 
+	rank.TextColor3 = Color3.fromRGB(227, 176, 7) 
 	rank.Text = "Assistant Manager"
 end
    end,
@@ -915,7 +915,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(227, 227, 5) 
+	rank.TextColor3 = Color3.fromRGB(227, 227, 5) 
 	rank.Text = "Supervisor"
 end
    end,
@@ -935,7 +935,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(227, 227, 5) 
+	rank.TextColor3 = Color3.fromRGB(227, 227, 5) 
 	rank.Text = "Shift Leader"
 end
    end,
@@ -955,7 +955,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(185, 255, 21) 
+	rank.TextColor3 = Color3.fromRGB(185, 255, 21) 
 	rank.Text = "Head Operator"
 end
    end,
@@ -975,7 +975,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(185, 255, 21) 
+	rank.TextColor3 = Color3.fromRGB(185, 255, 21) 
 	rank.Text = "Senior Operator"
 end
    end,
@@ -996,7 +996,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(185, 255, 21) 
+	rank.TextColor3 = Color3.fromRGB(185, 255, 21) 
 	rank.Text = "Junior Operator"
 end
    end,
@@ -1016,7 +1016,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(255, 253, 181) 
+	rank.TextColor3 = Color3.fromRGB(255, 253, 181) 
 	rank.Text = "Trainee"
 end
    end,
@@ -1036,7 +1036,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(0, 255, 213) 
+	rank.TextColor3 = Color3.fromRGB(0, 255, 213) 
 	rank.Text = "Customer"
 end
    end,
@@ -1056,7 +1056,7 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 local rank = nameTag:FindFirstChild("Rank")
 
 if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.new(255, 255, 255) 
+	rank.TextColor3 = Color3.fromRGB(255, 255, 255) 
 	rank.Text = "Guest"
 end
    end,
