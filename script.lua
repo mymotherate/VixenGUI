@@ -8,6 +8,20 @@ local RemoteArgs = {
     [5] = ""
 } -- Arguments aren't ordered
 
+-- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
+
+-- This data was received from the server
+firesignal(EssentialsEvent.OnClientEvent, 
+    "Message",
+    "VixenGUI | Washiez",
+    "Successfully loaded VixenGUI! Have fun!"
+)
+
 -- This data was received from the server
 firesignal(EssentialsEvent.OnClientEvent, unpack(RemoteArgs, 1, table.maxn(RemoteArgs)))
 
