@@ -48,6 +48,8 @@ local Tab3 = Window:CreateTab("Chats", 77955658249798) -- Title, Image
 
 local Tab2 = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
+local Tab6 = Window:CreateTab("Misc", 4483362458) -- Title, Image
+
 
 
 
@@ -397,13 +399,6 @@ game.Players.LocalPlayer:Kick("You have been ranked to Trainee!")
 })
 
 local Button = Tab3:CreateButton({
-   Name = "Clear Chat (SS)",
-   Callback = function()
-         game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("hi\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rCleared Chat.")
-   end,
-})
-
-local Button = Tab3:CreateButton({
    Name = "Greeting",
    Callback = function()
          game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Hello, welcome to Washiez! What kind of ticket can I get you? The options are Regular, Extra, and Deluxe! ")
@@ -572,3 +567,500 @@ local Button = Tab4:CreateButton({
 		for _,car in pairs(game.Workspace.SpawnedCars:GetChildren()) do if car:FindFirstChild("Body") then for _,part in pairs(car.Body:GetChildren()) do if part:IsA("BasePart") then part.CanCollide = false end end end if car:FindFirstChild("Chassis") and car.Chassis:FindFirstChild("VehicleSeat") then car.Chassis.VehicleSeat.Disabled = false end end
    end,
 })
+local Button = Tab6:CreateButton({
+   Name = "Become VIP (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Username")
+local hint = nameTag:FindFirstChild("Message")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(255, 170, 0)
+	hint.TextColor3 = Color3.new(255, 170, 0)
+	hint.Text = "⭐ VIP ⭐"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Chairman Rank (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(234, 97, 56) 
+	rank.Text = "Chairman"
+end
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Become Vice Chairman Rank (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(221, 106, 68) 
+	rank.Text = "Vice Chairman"
+end
+   end,
+})
+
+
+
+local Button = Tab6:CreateButton({
+   Name = "Become Chief Administrative Officer Rank (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(214, 103, 151) 
+	rank.Text = "Chief Administrative Officer"
+end
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Become Chief Operating Officer Rank (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(165, 54, 235) 
+	rank.Text = "Chief Operating Officer"
+end
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Become Chief Public Relations Officer Rank (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(165, 54, 235) 
+	rank.Text = "Chief Public Relations Officer"
+end
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Become Chief Human Resources Officer Rank (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(165, 54, 235) 
+	rank.Text = "Chief Human Resources Officer"
+end
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Become Head Corporate (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(52, 192, 227) 
+	rank.Text = "Head Corporate"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Senior Corporate (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(52, 192, 227) 
+	rank.Text = "Senior Corporate"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Junior Corporate (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(52, 192, 227) 
+	rank.Text = "Junior Corporate"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Corporate Intern (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(52, 192, 227) 
+	rank.Text = "Corporate Interm"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Head Director (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(243, 0, 117) 
+	rank.Text = "Head Director"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Senior Director (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(243, 0, 117) 
+	rank.Text = "Senior Director"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Junior Director (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(243, 0, 117) 
+	rank.Text = "Junior Director"
+end
+   end,
+})
+
+
+
+local Button = Tab6:CreateButton({
+   Name = "Become General Manager (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(227, 176, 7) 
+	rank.Text = "General Manager"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Assistant Manager (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(227, 176, 7) 
+	rank.Text = "Assistant Manager"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Supervisor (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(227, 227, 5) 
+	rank.Text = "Supervisor"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Shift Leader (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(227, 227, 5) 
+	rank.Text = "Shift Leader"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Head Operator (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(185, 255, 21) 
+	rank.Text = "Head Operator"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Senior Operator (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(185, 255, 21) 
+	rank.Text = "Senior Operator"
+end
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Become Junior Operator (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(185, 255, 21) 
+	rank.Text = "Junior Operator"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Trainee (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(255, 253, 181) 
+	rank.Text = "Trainee"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Customer (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(0, 255, 213) 
+	rank.Text = "Customer"
+end
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Guest (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.new(255, 255, 255) 
+	rank.Text = "Guest"
+end
+   end,
+})
+
+
+
