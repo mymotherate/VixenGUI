@@ -3,8 +3,8 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
 local RemoteArgs = {
     "PM",
-    "vixenvondutch",
-    "Enjoy the GUI!",
+    "TheMajikMan",
+    "We genuinely hope that you enjoy VixenGUI! Have fun!",
     [5] = ""
 } -- Arguments aren't ordered
 
