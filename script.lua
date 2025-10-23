@@ -48,7 +48,8 @@ local Tab3 = Window:CreateTab("Chats", 77955658249798) -- Title, Image
 
 local Tab2 = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
-local Tab6 = Window:CreateTab("Fake Ranks", 4483362458) -- Title, Image
+local Tab6 = Window:CreateTab("Ranks", 4483362458) -- Title, Image
+
 
 
 
@@ -546,7 +547,7 @@ function clip()
 	Clip = true
 end
 
-clip() -- to toggle noclip() and clip()
+noclip() -- to toggle noclip() and clip()
 
 local Slider = Tab5:CreateSlider({
    Name = "Gravity",
@@ -1060,6 +1061,5 @@ if rank and rank:IsA("TextLabel") then
 end
    end,
 })
-
 
 
