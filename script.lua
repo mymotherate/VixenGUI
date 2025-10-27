@@ -77,6 +77,8 @@ local Tab3 = Window:CreateTab("Chats", 77955658249798) -- Title, Image
 
 local Tab6 = Window:CreateTab("Ranks", 7992557358) -- Title, Image
 
+local Tab7 = Window:CreateTab("Fake Messages", 4483362458) -- Title, Image
+
 local Tab2 = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
 
@@ -1090,5 +1092,49 @@ if rank and rank:IsA("TextLabel") then
 end
    end,
 })
+local TitleInput = Tab7:CreateInput({
+   Name = "Message Title",
+   CurrentValue = "",
+   PlaceholderText = "Enter fake message title here..",
+   RemoveTextAfterFocusLost = false,
+   Flag = "MsgTitle",
+   Callback = function(Text)
+		
+   end,
+})
+
+local TextInput = Tab7:CreateInput({
+   Name = "Message Text",
+   CurrentValue = "",
+   PlaceholderText = "Enter fake message text here..",
+   RemoveTextAfterFocusLost = false,
+   Flag = "MsgText",
+   Callback = function(Text)
+			
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Send Fake Message",
+   Callback = function()
+   		local MsgTitle = TitleInput.CurrentValue
+		local MsgText = TextInput.CurrentValue
+
+		    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+    -- Remote
+    local EssentialsEvent = ReplicatedStorage["Basic Admin Essentials"]["Essentials Event"] -- RemoteEvent 
+
+    -- This data was received from the server
+    firesignal(EssentialsEvent.OnClientEvent, 
+        "Message",
+        MsgTitle,
+        MsgText
+    )
+   end,
+})
+
+
+
 
 
