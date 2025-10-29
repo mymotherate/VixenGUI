@@ -1191,14 +1191,10 @@ local Button = Tab6:CreateButton({
 		
 
 local player = game.Players.LocalPlayer
-			local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
 local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
 local rank = nameTag:FindFirstChild("Rank")
-player.leaderstats.Rank = rank.Text
+game.Players.LocalPlayer.leaderstats.Rank.Value = rank.Text
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1214,12 +1210,12 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 
 
 local rank = nameTag:FindFirstChild("Rank")
-
+player.Team = "Overseer"
 if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(91, 154, 76) 
 	rank.Text = "Overseer | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Shamrock")
+
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1235,12 +1231,12 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 
 
 local rank = nameTag:FindFirstChild("Rank")
-
+player.Team = "Ranker"
 if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(255, 176, 0) 
 	rank.Text = "Ranker | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Deep orange")
+
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1303,7 +1299,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
 	rank.Text = "Trainer A | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Persimmon")
+player.Team = "Trainer"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1319,12 +1315,12 @@ local nameTag = nameTagsFolder:WaitForChild(player.Name)
 
 
 local rank = nameTag:FindFirstChild("Rank")
-
+player.Team = "Trainer"
 if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
 	rank.Text = "Trainer B | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Persimmon")
+
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1345,7 +1341,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
 	rank.Text = "Trainer C | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Persimmon")
+player.Team = "Trainer"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1366,7 +1362,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
 	rank.Text = "Trainer D | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Persimmon")
+player.Team = "Trainer"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1387,7 +1383,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
 	rank.Text = "Trainer E | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Persimmon")
+player.Team = "Trainer"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1408,7 +1404,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
 	rank.Text = "Trainer F | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Persimmon")
+player.Team = "Trainer"
    end,
 })
 
@@ -1430,7 +1426,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
 	rank.Text = "Assistant A | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Olive")
+player.Team = "Assistant"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1451,7 +1447,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
 	rank.Text = "Assistant B | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Olive")
+player.Team = "Assistant"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1472,7 +1468,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
 	rank.Text = "Assistant C | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Olive")
+player.Team = "Assistant"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1493,7 +1489,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
 	rank.Text = "Assistant D | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Olive")
+player.Team = "Assistant"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1514,7 +1510,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
 	rank.Text = "Assistant E | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Olive")
+player.Team = "Assistant"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1535,7 +1531,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
 	rank.Text = "Assistant F | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Olive")
+player.Team = "Assistant"
    end,
 })
 
@@ -1557,7 +1553,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(0, 32, 96) 
 	rank.Text = "Group A | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Navy blue")
+player.Team = "Group A"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1578,7 +1574,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(16, 42, 220) 
 	rank.Text = "Group B | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Lapis")
+player.Team = "Group B"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1599,7 +1595,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(13, 105, 172) 
 	rank.Text = "Group C | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Bright blue")
+player.Team = "Group C"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1641,7 +1637,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(4, 175, 236) 
 	rank.Text = "Group E | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Cyan")
+player.Team = "Group E"
    end,
 })
 local Button = Tab6:CreateButton({
@@ -1662,7 +1658,7 @@ if rank and rank:IsA("TextLabel") then
 	rank.TextColor3 = Color3.fromRGB(175, 221, 255) 
 	rank.Text = "Group F | " .. rank.Text
 end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Pastel Blue")
+player.Team = "Group F"
    end,
 })
 local Button = Tab6:CreateButton({
