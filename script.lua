@@ -1134,6 +1134,36 @@ local Button = Tab7:CreateButton({
    end,
 })
 
+local Button = Tab4:CreateButton({
+   Name = "Visual Kick All",
+   Callback = function()
+		local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Workspace = game:GetService("Workspace")
+
+-- Delete other players' characters and Player objects locally
+for _, player in pairs(Players:GetPlayers()) do
+    if player ~= LocalPlayer then
+        if player.Character then
+            player.Character:Destroy()
+        end
+        player:Destroy() -- Only removes from local client
+    end
+end
+
+-- Delete all children in Workspace.SpawnedCars
+local spawnedCars = Workspace:FindFirstChild("SpawnedCars")
+if spawnedCars then
+    for _, car in pairs(spawnedCars:GetChildren()) do
+        car:Destroy()
+        wait(0.1)
+    end
+end
+   end,
+})
+
+
+
 
 
 
