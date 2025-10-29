@@ -1198,492 +1198,6 @@ game.Players.LocalPlayer.leaderstats.Rank.Value = rank.Text
    end,
 })
 local Button = Tab6:CreateButton({
-   Name = "Become Overseer (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-player.Team = "Overseer"
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(91, 154, 76) 
-	rank.Text = "Overseer | " .. rank.Text
-end
-
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Ranker (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-player.Team = "Ranker"
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(255, 176, 0) 
-	rank.Text = "Ranker | " .. rank.Text
-end
-
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Host (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(151, 0, 0) 
-	rank.Text = "Host | " .. rank.Text
-end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Crimson")
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Co-Host (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(196, 40, 28) 
-	rank.Text = "Co-Host | " .. rank.Text
-end
-			game.Players.LocalPlayer.TeamColor = BrickColor.new("Bright red")
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Trainer A (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
-	rank.Text = "Trainer A | " .. rank.Text
-end
-player.Team = "Trainer"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Trainer B (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-player.Team = "Trainer"
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
-	rank.Text = "Trainer B | " .. rank.Text
-end
-
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Trainer C (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
-	rank.Text = "Trainer C | " .. rank.Text
-end
-player.Team = "Trainer"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Trainer D (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
-	rank.Text = "Trainer D | " .. rank.Text
-end
-player.Team = "Trainer"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Trainer E (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
-	rank.Text = "Trainer E | " .. rank.Text
-end
-player.Team = "Trainer"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Trainer F (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
-	rank.Text = "Trainer F | " .. rank.Text
-end
-player.Team = "Trainer"
-   end,
-})
-
-local Button = Tab6:CreateButton({
-   Name = "Become Assistant A (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
-	rank.Text = "Assistant A | " .. rank.Text
-end
-player.Team = "Assistant"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Assistant B (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
-	rank.Text = "Assistant B | " .. rank.Text
-end
-player.Team = "Assistant"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Assistant C (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
-	rank.Text = "Assistant C | " .. rank.Text
-end
-player.Team = "Assistant"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Assistant D (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
-	rank.Text = "Assistant D | " .. rank.Text
-end
-player.Team = "Assistant"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Assistant E (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
-	rank.Text = "Assistant E | " .. rank.Text
-end
-player.Team = "Assistant"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Assistant F (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
-	rank.Text = "Assistant F | " .. rank.Text
-end
-player.Team = "Assistant"
-   end,
-})
-
-local Button = Tab6:CreateButton({
-   Name = "Become Group A (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(0, 32, 96) 
-	rank.Text = "Group A | " .. rank.Text
-end
-player.Team = "Group A"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Group B (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(16, 42, 220) 
-	rank.Text = "Group B | " .. rank.Text
-end
-player.Team = "Group B"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Group C (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(13, 105, 172) 
-	rank.Text = "Group C | " .. rank.Text
-end
-player.Team = "Group C"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Group D (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(9, 137, 207) 
-	rank.Text = "Group D | " .. rank.Text
-end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Electric blue")
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Group E (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(4, 175, 236) 
-	rank.Text = "Group E | " .. rank.Text
-end
-player.Team = "Group E"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Group F (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(175, 221, 255) 
-	rank.Text = "Group F | " .. rank.Text
-end
-player.Team = "Group F"
-   end,
-})
-local Button = Tab6:CreateButton({
-   Name = "Become Awaiting Placement (CS)",
-   Callback = function()
-		
-
-local player = game.Players.LocalPlayer
-local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
-
-
-local nameTag = nameTagsFolder:WaitForChild(player.Name)
-
-
-local rank = nameTag:FindFirstChild("Rank")
-
-if rank and rank:IsA("TextLabel") then
-	rank.TextColor3 = Color3.fromRGB(159, 161, 172) 
-end
-game.Players.LocalPlayer.TeamColor = BrickColor.new("Fossil")
-   end,
-})
-
-
-local Button = Tab6:CreateButton({
    Name = "Become Chairman Rank (CS)",
    Callback = function()
 		
@@ -2155,6 +1669,495 @@ if rank and rank:IsA("TextLabel") then
 end
    end,
 })
+local Divider = Tab6:CreateDivider()
+local Paragraph = Tab6:CreateParagraph({Title = "Training Ranks", Content = "Heres where you can get fake training roles!"})
+local Button = Tab6:CreateButton({
+   Name = "Become Overseer (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(91, 154, 76) 
+	rank.Text = "Overseer | " .. rank.Text
+end
+player.Team = "Overseer"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Ranker (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(255, 176, 0) 
+	rank.Text = "Ranker | " .. rank.Text
+end
+player.Team = "Ranker"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Host (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(151, 0, 0) 
+	rank.Text = "Host | " .. rank.Text
+end
+game.Players.LocalPlayer.TeamColor = BrickColor.new("Crimson")
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Co-Host (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(196, 40, 28) 
+	rank.Text = "Co-Host | " .. rank.Text
+end
+			game.Players.LocalPlayer.TeamColor = BrickColor.new("Bright red")
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Trainer A (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
+	rank.Text = "Trainer A | " .. rank.Text
+end
+player.Team = "Trainer"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Trainer B (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+player.Team = "Trainer"
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
+	rank.Text = "Trainer B | " .. rank.Text
+end
+
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Trainer C (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
+	rank.Text = "Trainer C | " .. rank.Text
+end
+player.Team = "Trainer"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Trainer D (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
+	rank.Text = "Trainer D | " .. rank.Text
+end
+player.Team = "Trainer"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Trainer E (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
+	rank.Text = "Trainer E | " .. rank.Text
+end
+player.Team = "Trainer"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Trainer F (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(255, 89, 89) 
+	rank.Text = "Trainer F | " .. rank.Text
+end
+player.Team = "Trainer"
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Become Assistant A (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
+	rank.Text = "Assistant A | " .. rank.Text
+end
+player.Team = "Assistant"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Assistant B (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
+	rank.Text = "Assistant B | " .. rank.Text
+end
+player.Team = "Assistant"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Assistant C (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
+	rank.Text = "Assistant C | " .. rank.Text
+end
+player.Team = "Assistant"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Assistant D (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
+	rank.Text = "Assistant D | " .. rank.Text
+end
+player.Team = "Assistant"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Assistant E (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
+	rank.Text = "Assistant E | " .. rank.Text
+end
+player.Team = "Assistant"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Assistant F (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(193, 190, 66) 
+	rank.Text = "Assistant F | " .. rank.Text
+end
+player.Team = "Assistant"
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Become Group A (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(0, 32, 96) 
+	rank.Text = "Group A | " .. rank.Text
+end
+player.Team = "Group A"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Group B (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(16, 42, 220) 
+	rank.Text = "Group B | " .. rank.Text
+end
+player.Team = "Group B"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Group C (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(13, 105, 172) 
+	rank.Text = "Group C | " .. rank.Text
+end
+player.Team = "Group C"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Group D (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(9, 137, 207) 
+	rank.Text = "Group D | " .. rank.Text
+end
+game.Players.LocalPlayer.TeamColor = BrickColor.new("Electric blue")
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Group E (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(4, 175, 236) 
+	rank.Text = "Group E | " .. rank.Text
+end
+player.Team = "Group E"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Group F (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(175, 221, 255) 
+	rank.Text = "Group F | " .. rank.Text
+end
+player.Team = "Group F"
+   end,
+})
+local Button = Tab6:CreateButton({
+   Name = "Become Awaiting Placement (CS)",
+   Callback = function()
+		
+
+local player = game.Players.LocalPlayer
+local nameTagsFolder = game.Workspace:WaitForChild("Nametags")
+
+
+local nameTag = nameTagsFolder:WaitForChild(player.Name)
+
+
+local rank = nameTag:FindFirstChild("Rank")
+
+if rank and rank:IsA("TextLabel") then
+	rank.TextColor3 = Color3.fromRGB(159, 161, 172) 
+end
+game.Players.LocalPlayer.TeamColor = BrickColor.new("Fossil")
+   end,
+})
+
+
+
 local TitleInput = Tab7:CreateInput({
    Name = "Message Title",
    CurrentValue = "",
