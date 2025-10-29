@@ -1198,7 +1198,7 @@ game.Players.LocalPlayer.leaderstats.Rank.Value = rank.Text
    end,
 })
 local Divider = Tab6:CreateDivider()
-local Paragraph = Tab6:CreateParagraph({Title = "Fake Ranks", Content = "Heres where you can give yourself ALL RANKS visually!"})
+local Paragraph = Tab6:CreateParagraph({Title = "Fake Ranks", Content = "Heres where you can give yourself ALL RANKS visually! Click the desired role to CLEAR your nametag!"})
 local Button = Tab6:CreateButton({
    Name = "Become Chairman Rank (CS)",
    Callback = function()
