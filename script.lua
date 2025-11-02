@@ -82,6 +82,11 @@ local Tab7 = Window:CreateTab("Fake Messages", 4483362458) -- Title, Image
 local Tab2 = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
 
+	local Button = Tab6:CreateButton({
+   Name = "Load AntiHub",
+   Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Loader.lua")()
+})
 
 
 
